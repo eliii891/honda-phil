@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Philippines</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark gray text */
+        }
+
+        .navbar {
+            background-color: #c91414; /* Red navbar */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff; /* White text */
+        }
+
+        .jumbotron {
+            background-color: #c91414; /* Red jumbotron */
+            color: #fff; /* White text */
+            padding: 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1140px; /* Adjust the width as needed */
+        }
+
+        /* Style for car and motorcycle sections */
+        .model-section .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .model-section .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .model-section .card-body {
+            padding: 15px;
+        }
+
+        .model-section h3 {
+            color: #c91414; /* Red heading */
+            font-weight: bold;
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: #333; /* Dark gray footer */
+            color: #fff; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff; /* White link color */
+
+        }
+
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="honda logoo.png" alt="Honda Logo" width="150" height="100" class="me-2" style="border-radius: 50%;">
+                Honda Philippines
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#motorcycles">Motorcycles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Welcome to Honda Philippines</h1>
+        <p>The Power of Dreams</p>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Latest News</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="first.png" class="card-img-top" alt="Honda Civic">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda Philippines Unleashes Power and Innovation at the Action-Packed Inside Racing Bikefest 2025</h3>
+                        <p class="card-text">Motorcycle enthusiasts gathered in full force for the highly anticipated Inside Racing Bike Festival & Trade Show 2025, which officially opens today,...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="second.png" class="card-img-top" alt="Honda CR-V">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda Powers the 2025 FIVB Volleyball Men's World Championship with a Game-Changing Partnership</h3>
+                        <p class="card-text">Honda Philippines, Inc., the No. 1 motorcycle manufacturer affirmed its commitment to empower the youth through sports by becoming a key partner in...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="third.png" class="card-img-top" alt="Honda BR-V">
+                    <div class="card-body">
+                        <h3 class="card-title">Alfonsi Daquigan shows his impressive skills in Round 1 of the 2025 Idemitsu Asia Talent Cup.</h3>
+                        <p class="card-text">Chang International Circuit, Thailand – March 1 - 2, 2025 – A new chapter in Philippine motorsports has been written as Alfonsi “Fonsi”...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide container mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="civic type r.png" class="d-block w-100" alt="Civc Type R">
+            </div>
+            <div class="carousel-item active">
+                <img src="new civic.jpg" class="d-block w-100" alt="New Honda Civi">
+            </div>
+            <div class="carousel-item">
+                <img src="br-v.png" class="d-block w-100" alt="BR-V">
+            </div>
+            <div class="carousel-item">
+                <img src="hr-v.png" class="d-block w-100" alt="Hr-V">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container mt-5 model-section" id="cars">
+        <h2 class="text-center">Honda Cars</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="CIVIC DESIGN.jpg" class="card-img-top" alt="Honda Civic">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda Civic</h3>
+                        <p class="card-text">The Honda Civic is a compact car that offers a sporty driving experience and fuel efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cr-vv.jpg" class="card-img-top" alt="Honda CR-V">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda CR-V</h3>
+                        <p class="card-text">The Honda CR-V is a popular SUV that provides spaciousness and versatility.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="br-vv.jpg" class="card-img-top" alt="Honda BR-V">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda BR-V</h3>
+                        <p class="card-text">The Honda BR-V is a compact SUV that offers a comfortable ride and ample cargo space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 model-section" id="motorcycles">
+        <h2 class="text-center">Honda Motorcycles</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="xadv.png" class="card-img-top" alt="The All-New X-ADV">
+                    <div class="card-body">
+                        <h3 class="card-title">X-ADV</h3>
+                        <p class="card-text">The All-New X-ADV is designed to elevate your riding experience to new heights, discovering the perfect blend of toughness and dynamism.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Honda Click 125i.png" class="card-img-top" alt="Honda Click 125i">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda Click 125i</h3>
+                        <p class="card-text">The Honda Click 125i is a stylish and fuel-efficient scooter that is perfect for city riding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gg.png" class="card-img-top" alt="Giorno+">
+                    <div class="card-body">
+                        <h3 class="card-title">Giorno+</h3>
+                        <p class="card-text">Get ready to make a statement on the road with The All-New Giorno+.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="services">
+        <h2 class="text-center">Honda Services</h2>
+        <p>Honda Philippines offers a wide range of services, including:</p>
+        <ul>
+            <li>Vehicle maintenance</li>
+            <li>Parts and accessories</li>
+            <li>Insurance</li>
+            <li>Financing</li>
+        </ul>
+    </div>
+
+    <div class="container mt-5" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Find Us Near SM Dagupan</h1>
+    </div>
+
+    <div class="container">
+        <div class="map-container">
+            <iframe
+                width="100%"
+                height="400"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.007198274018!2d120.33849857484892!3d16.043938484636225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3393ddfb3fa14dcf%3A0xaea536f4d6d2a3df!2sSM%20City%20Dagupan!5e0!3m2!1sen!2sph!4v1712065281173!5m2!1sen!2sph">
+            </iframe>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2025 Honda Philippines, Inc. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
